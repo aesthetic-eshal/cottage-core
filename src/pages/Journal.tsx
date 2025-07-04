@@ -26,10 +26,10 @@ const Journal = () => {
     const [searchTerm, setSearchTerm] = useState('');
 
     // Cache timers
-    const titleCacheTimer = useRef<NodeJS.Timeout | null>(null);
-    const contentCacheTimer = useRef<NodeJS.Timeout | null>(null);
-    const passwordCacheTimer = useRef<NodeJS.Timeout | null>(null);
-    const searchCacheTimer = useRef<NodeJS.Timeout | null>(null);
+    const titleCacheTimer: any = useRef(null);
+    const contentCacheTimer: any = useRef(null);
+    const passwordCacheTimer: any = useRef(null);
+    const searchCacheTimer: any = useRef(null);
 
     // Refs for focus management
     const searchInputRef = useRef<HTMLInputElement>(null);
