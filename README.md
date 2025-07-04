@@ -4,7 +4,7 @@
 
 > This Website uses React & Tailwind CSS
 
-## Developing
+## Developing 
 
 * Clone the Repository
 ```
