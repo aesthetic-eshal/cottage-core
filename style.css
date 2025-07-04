@@ -37,19 +37,21 @@ main {
   max-width: 1000px;
   margin: auto;
 }
+
 .intro img {
   max-width: 100%;
   height: auto;
-  width: 4px; /* adjust this as needed */
+  width: 4px;
+  /* adjust this as needed */
   border-radius: 5px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .intro img {
   flex: 1 1 300px;
   max-width: 100%;
   border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .text {
@@ -71,6 +73,7 @@ button {
   color: #3d2b1f;
   transition: background-color 0.3s;
 }
+
 .petals {
   position: fixed;
   top: 0;
@@ -85,6 +88,7 @@ button {
 button:hover {
   background-color: #bfa58a;
 }
+
 .blog {
   max-width: 800px;
   margin: 4rem auto;
@@ -121,10 +125,12 @@ button:hover {
   font-style: italic;
   margin-bottom: 0.5rem;
 }
+
 .date .icon {
   margin-right: 6px;
   color: #a3917a;
 }
+
 .recipe {
   background-color: #fff8f3;
   padding: 1.5rem;
@@ -151,6 +157,7 @@ button:hover {
   font-style: italic;
   color: #7a6151;
 }
+
 .quote {
   margin-top: 3rem;
   padding: 1.2rem;
@@ -177,4 +184,137 @@ footer {
   margin-top: 3rem;
   font-size: 0.9rem;
   color: #7e6651;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  font-family: 'Georgia', serif;
+  background-color: #fdfaf6;
+  border-top: 2px dashed #c2b9a1;
+}
+
+.section h2 {
+  font-size: 2em;
+  color: #6b5c48;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* 📷 Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border: 4px solid #e2dacb;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* 🧵 Craft */
+.craft-list article {
+  background-color: #fffaf3;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #dcd1b4;
+  border-radius: 8px;
+}
+
+.craft-list h3 {
+  color: #7c6f57;
+}
+
+.craft-list a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #927b5b;
+  text-decoration: underline;
+}
+
+/* 🎶 Playlist */
+#cottage-playlist p {
+  text-align: center;
+  color: #6b5c48;
+  margin-bottom: 15px;
+}
+
+.gallery img {
+  height: 100px;
+  /* or whatever size fits your gallery */
+  object-fit: cover;
+}
+
+.gallery img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  width: 100%;
+}
+
+.photo-gallery img {
+  height: 200px;
+  /* you can change this height to whatever you like */
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+body {
+  background-image: url('vintage-paper.jpg');
+  /* your background image here */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.polaroid {
+  width: 200px;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px #aaa;
+  text-align: center;
+  font-style: italic;
+  margin: 1rem auto;
+}
+.petals {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.petal {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url('https://i.imgur.com/3cT8blw.png'); /* flower petal PNG */
+  background-size: cover;
+  opacity: 0.8;
+  animation: fall 10s linear infinite;
+}
+
+.petal:nth-child(1) { left: 10%; animation-delay: 0s; }
+.petal:nth-child(2) { left: 30%; animation-delay: 2s; }
+.petal:nth-child(3) { left: 50%; animation-delay: 4s; }
+.petal:nth-child(4) { left: 70%; animation-delay: 6s; }
+.petal:nth-child(5) { left: 90%; animation-delay: 8s; }
+
+@keyframes fall {
+  0% {
+    top: -10%;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 110%;
+    transform: rotate(360deg);
+  }
 }
